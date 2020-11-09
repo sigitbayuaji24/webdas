@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form login</title>
+  <link rel="icon" sizes="152x152" href="apple-icon-152x152.png">
+</head>
+<nav>
+  <a href="HalamanAwal.html">Home</a>
+  <a href="resep.html">Resep</a>
+  <a href="frozenfood.html">Frozen Food</a>
+  <a href="kontak.html">Kontak</a>
+</nav>
+<body>
+    <form action="login.php" method="POST">
+        <fieldset>
+          <legend>Login</legend>
+          <P>
+              <label>username:</label>
+              <input type="text" name="username" placeholder="username..."/>
+          </P>
+          <p>
+              <label>password:</label>
+              <input type="password" name="password" placeholder="password..."/>
+          </p>
+          <p>
+            jika anda belum memiliki alamat silahkan klik daftar terlebih dahulu
+            <nav>
+              <a href="daftar.html">Daftar</a>
+            </nav>
+          </p>
+          <p>
+              <label><input type="checkbox" name="remember" placeholder="remember"/>Remember me</label>
+          </p>
+          <p>
+              <input type="submit" name="submit" value="submit"/>
+          </p>
+        </fieldset>
+    </form>
+</body>
+</html>
