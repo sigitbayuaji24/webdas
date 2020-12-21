@@ -7,33 +7,44 @@
   <script>
 // Method filter
 const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+document.write("<br><b> Array angka : </b>")
+document.write(angka + "<br> <br> ")
 
 // ambil data yang hanya habis dibagi dua
 const filteredArray = angka.filter(item => item % 2 === 0);
 
 console.log(filteredArray) // -> [2, 4, 6, 8]
-document.write(filteredArray);
+document.write("<b> Array angka : </b>"+ angka + " <br><b> filteredArray: </b>");
+document.write(filteredArray + "<br> <br>");
 
 // Method Includes
 var tanaman = ["Padi", "Kacang", "Jagung", "Kedelai"];
-document.write(tanaman);
+document.write("<b> Tanaman : </b>");
+document.write(tanaman + "<br><br>");
 
 // apakah kacang sudah ada di dalam array tanaman?
 var adaKacang = tanaman.includes("Kacang");
 console.log(adaKacang); // -> true
-document.write(adaKacang);
+document.write("<b>Apakah Ada Kacang ? : </b> <br><b>jawab: </b>");
+document.write(adaKacang + "<br> <br>");
 
 // apakah bayam ada?
 var adaBayam = tanaman.includes("Bayam");
 console.log(adaBayam); // -> false
-document.write(adaBayam);
-
+document.write("<b> apakah ada bayam? </b><br><b>jawab: </b>");
+document.write(adaBayam + "<br> <br>");
 //Method Short
+const huruf = ['a','f','z','e','r','g'];
 var alfabet = ['a','f','z','e','r','g'];
-var angka1 = [3,1,2,6,8,5];
 console.log(alfabet.sort()); //-> ["a", "e", "f", "g", "r", "z"]
-console.log(angka.sort()); // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
-document.write(alfabet,angka1);
+document.write("<b> Array Alfabet : </b>"+ huruf +"<br><b> Short Alfabet : </b>");
+document.write(alfabet + "<br><br>");
+
+const bilangan = [3,1,2,6,8,5,9,4,7];
+var angka1 = [3,1,2,6,8,5,9,4,7];
+console.log(angka1.sort()); // -> [1, 2, 3, 4, 5, 6, 7, 8, 9]
+document.write("<b> Array Angka : </b>"+ bilangan + "<br><b> short angka : </b>");
+document.write(angka1 + "<br><br>");
   </script>
 </body>
 </html>
